@@ -1,0 +1,677 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.C5BE7CED016_v2_sub_generateChatCompletion_Create.Bundle;assembly=C5BE7CED016_v2_sub_g.XK9TE1iAsdR1UMxYP1wcG963" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="out_FilteredPBC" Type="OutArgument(sd:DataTable)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Microsoft.Win32.SafeHandles</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Configuration.Assemblies</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.CodeDom.Compiler</x:String>
+      <x:String>System.Buffers</x:String>
+      <x:String>System.Buffers.Text</x:String>
+      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.Threading</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>System.Threading.Tasks.Sources</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.Unicode</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Security.Principal</x:String>
+      <x:String>System.Security.Permissions</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Runtime</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Runtime.Remoting</x:String>
+      <x:String>System.Runtime.ExceptionServices</x:String>
+      <x:String>System.Runtime.ConstrainedExecution</x:String>
+      <x:String>System.Runtime.Versioning</x:String>
+      <x:String>System.Runtime.Loader</x:String>
+      <x:String>System.Runtime.Intrinsics</x:String>
+      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
+      <x:String>System.Runtime.Intrinsics.Arm</x:String>
+      <x:String>System.Runtime.Intrinsics.X86</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
+      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
+      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>System.Resources</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Reflection.Metadata</x:String>
+      <x:String>System.Reflection.Emit</x:String>
+      <x:String>System.IO.Enumeration</x:String>
+      <x:String>System.Diagnostics.SymbolStore</x:String>
+      <x:String>System.Diagnostics.Contracts</x:String>
+      <x:String>System.Diagnostics.CodeAnalysis</x:String>
+      <x:String>System.Diagnostics.Tracing</x:String>
+      <x:String>System.Collections.Concurrent</x:String>
+      <x:String>Internal</x:String>
+      <x:String>System.CodeDom</x:String>
+      <x:String>Microsoft.CSharp</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Linq.Expressions.Interpreter</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>UiPath.Workflow.Runtime</x:String>
+      <x:String>System.Activities.Tracking</x:String>
+      <x:String>System.Activities.Statements.Tracking</x:String>
+      <x:String>System.Activities.Runtime</x:String>
+      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Activities.ParallelTracking</x:String>
+      <x:String>System.Activities.Hosting</x:String>
+      <x:String>System.Activities.Persistence</x:String>
+      <x:String>System.Activities.DurableInstancing</x:String>
+      <x:String>System.ComponentModel.Design.Serialization</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Security.Authentication.ExtendedProtection</x:String>
+      <x:String>System.Timers</x:String>
+      <x:String>System.ComponentModel.Design</x:String>
+      <x:String>System.Xml.Schema</x:String>
+      <x:String>System.Xml.Xsl</x:String>
+      <x:String>System.Xml.Xsl.Runtime</x:String>
+      <x:String>System.Xml.XPath</x:String>
+      <x:String>System.Xml.Resolvers</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>Microsoft.CodeAnalysis</x:String>
+      <x:String>Microsoft.CodeAnalysis.FlowAnalysis</x:String>
+      <x:String>Microsoft.CodeAnalysis.Text</x:String>
+      <x:String>Microsoft.CodeAnalysis.Diagnostics</x:String>
+      <x:String>Microsoft.CodeAnalysis.Diagnostics.Telemetry</x:String>
+      <x:String>Microsoft.CodeAnalysis.Operations</x:String>
+      <x:String>Microsoft.CodeAnalysis.Emit</x:String>
+      <x:String>Microsoft.CodeAnalysis.VisualBasic</x:String>
+      <x:String>Microsoft.CodeAnalysis.VisualBasic.Syntax</x:String>
+      <x:String>Microsoft.VisualBasic.FileIO</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C5BE7CED016_v2_sub_generateChatCompletion_Create.Bundle</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.Core.Activities.Storage</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Net.Security</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xml.XPath.XDocument</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>C5BE7CED016_v2_sub_g.XK9TE1iAsdR1UMxYP1wcG963</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="read a csv. converts the datatable to an xlsx" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1916.6666666666667,4319.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_CsvData" />
+      <Variable x:TypeArguments="uiascb:v2_sub_generateChatCompletion_Create" Name="contentGeneration" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of String)]" Name="uniqueCategories" />
+      <Variable x:TypeArguments="x:String" Name="EmList" />
+      <Variable x:TypeArguments="x:String" Name="InterpretabilityRating" />
+      <Variable x:TypeArguments="x:String" Name="in_pbcRequest" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="For Each File in Folder" sap:VirtualizedContainerService.HintSize="546.6666666666666,757.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_10">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="selectFolder" />
+        <Variable x:TypeArguments="s:String[]" Name="files" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="502,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_12">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[selectFolder]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">C:\Temp\AgenticAuditorInput</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap:VirtualizedContainerService.HintSize="502,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[files]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(selectFolder)]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For each file" sap:VirtualizedContainerService.HintSize="502,430.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[files]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="x:String">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:String" Name="file" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,292" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <WriteLine DisplayName="Write line" sap:VirtualizedContainerService.HintSize="434,124" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[file]" />
+              <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_13">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[in_pbcRequest]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[file]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
+    </Sequence>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="546.6666666666666,280" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,168" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_11">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[in_pbcRequest]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">C:\Temp\AgenticAuditorInput\pbc5count.csv</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[dt_CsvData]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read data from CSV file" FilePath="[in_pbcRequest]" sap:VirtualizedContainerService.HintSize="546.6666666666666,172" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
+    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Category" DataTable="[dt_CsvData]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="546.6666666666666,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
+    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="EvidentialMaterials" DataTable="[dt_CsvData]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="546.6666666666666,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3" />
+    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Interpretability Rating" DataTable="[dt_CsvData]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="546.6666666666666,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_CsvData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="546.6666666666666,1630" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512.6666666666666,1430" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="478.6666666666667,847.3333333333334" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="2">
+              <ui:RetryScope.ActivityBody>
+                <ActivityAction>
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,636.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <isactr:ConnectorActivity Configuration="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" ConnectionId="5e196f68-743e-4e9a-8b03-cd5be7ced016" DisplayName="CategoryLLM" sap:VirtualizedContainerService.HintSize="382,576.6666666666666" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="aba52a00-4c05-318d-8f99-5ad924b2f277">
+                      <isactr:ConnectorActivity.FieldObjects>
+                        <isactr:FieldObject Name="modelName" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:String">gpt-4o-2024-11-20</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="prompt" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:String" xml:space="preserve">["You are an expert financial audit coordinator responsible For categorizing Provided By Client (PBC) requests. Your task Is To analyze a New request And assign it To exactly one Of the following categories based 
+On the DLA CSO FISCAM context: Security Management, Access Control, Configuration Management, Segregation Of Incompatible Duties, Contingency Planning, Or Business Continuity. 
+These are the only allowed categories — Do Not invent Or Return any other category. 
+Respond With only the exact category name And Nothing Else. The New request Is: " + CurrentRow("Request").ToString]</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="isPIIEnabled" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="isFilterPIIEnabled" Type="FieldArgument" />
+                        <isactr:FieldObject Name="languageCode" Type="FieldArgument" />
+                        <isactr:FieldObject Name="piiEntityCategories_array" Type="FieldArgument" />
+                        <isactr:FieldObject Name="confidenceThreshold" Type="FieldArgument" />
+                        <isactr:FieldObject Name="topK" Type="FieldArgument" />
+                        <isactr:FieldObject Name="contextGrounding" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:String">Existing index</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="_file" Type="FieldArgument" />
+                        <isactr:FieldObject Name="folderKey" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:String">b93943ed-d73d-4143-8070-7d0386c90185</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="topP" Type="FieldArgument" />
+                        <isactr:FieldObject Name="indexID" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:String">DLA CSO FISCAM</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="numberOfResults" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:Int64">3</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="top_p" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:Int64">1</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="instruction" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:String">You are a helpful assistant</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="max_tokens" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:Int64" />
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="temperature" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:Double">0</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="frequency_penalty" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:Int64">0</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="presence_penalty" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:Int64">0</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="n" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:Int64">1</InArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="_stop" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <InArgument x:TypeArguments="x:String" />
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="out_text" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="out_maskedText" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="Jit_v2_sub_generateChatCompletion" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <OutArgument x:TypeArguments="uiascb:v2_sub_generateChatCompletion_Create">[contentGeneration]</OutArgument>
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                        <isactr:FieldObject Name="out_contextGroundingCitationsString" Type="FieldArgument">
+                          <isactr:FieldObject.Value>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </isactr:FieldObject.Value>
+                        </isactr:FieldObject>
+                      </isactr:ConnectorActivity.FieldObjects>
+                    </isactr:ConnectorActivity>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RetryScope.ActivityBody>
+              <ui:RetryScope.Condition>
+                <ActivityFunc x:TypeArguments="x:Boolean" />
+              </ui:RetryScope.Condition>
+            </ui:RetryScope>
+            <Assign sap:VirtualizedContainerService.HintSize="478.6666666666667,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[currentRow("Category")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[contentGeneration.text]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="478.6666666666667,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,168" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_5">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Object">[currentRow("Category")]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Object">[contentGeneration.text]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ExtractEMList - Invoke Workflow File (ExtractEMList.xaml)" sap:VirtualizedContainerService.HintSize="478.6666666666667,177.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ExtractEMList.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_Request">[CurrentRow("Request").ToString]</InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_Percent">[InterpretabilityRating]</OutArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="out_EMList">[EmList]</OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.6666666666667,170.66666666666666" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Object">[CurrentRow("Interpretability Rating")]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Object">[InterpretabilityRating]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Object">[CurrentRow("EvidentialMaterials")]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Object">[EmList]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+            </ui:MultipleAssign>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="546.6666666666666,338" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="468,226" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="434,118" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Assign.To>
+              <OutArgument x:TypeArguments="scg:List(x:String)">[uniqueCategories]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="scg:List(x:String)" xml:space="preserve">[dt_CsvData.AsEnumerable().Select(Function (r) _
+	r.Field(Of String)("Category")).Distinct().ToList()]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[uniqueCategories]">
+            <ui:ForEach.Body>
+              <ActivityAction x:TypeArguments="x:String">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="522.6666666666666,798.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="sd:DataTable" Name="dtFilteredRequests" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:FilterDataTable DataTable="[dt_CsvData]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="488.6666666666667,196" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dtFilteredRequests]" SelectColumnsMode="Remove">
+                    <ui:FilterDataTable.Filters>
+                      <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                        <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                          <ui:FilterOperationArgument.Column>
+                            <InArgument x:TypeArguments="x:String">["Category"]</InArgument>
+                          </ui:FilterOperationArgument.Column>
+                          <ui:FilterOperationArgument.Operand>
+                            <InArgument x:TypeArguments="x:String">[currentText]</InArgument>
+                          </ui:FilterOperationArgument.Operand>
+                        </ui:FilterOperationArgument>
+                      </scg:List>
+                    </ui:FilterDataTable.Filters>
+                    <ui:FilterDataTable.SelectColumns>
+                      <scg:List x:TypeArguments="InArgument" Capacity="4">
+                        <x:Null />
+                      </scg:List>
+                    </ui:FilterDataTable.SelectColumns>
+                  </ui:FilterDataTable>
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488.6666666666667,542.6666666666666" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                    <TryCatch.Try>
+                      <ui:ExcelApplicationScope Password="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="450,280.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" SensitivityOperation="None" Visible="False" WorkbookPath="C:\Users\pablo.balmaseda\Documents\AgenticAuditor\Outputs\FilteredRequests.xlsx">
+                        <ui:ExcelApplicationScope.Body>
+                          <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,170.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:ExcelWriteRange AddHeaders="True" DataTable="[dtFilteredRequests]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="382,110.66666666666667" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="[currentText]" StartingCell="A1" />
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:ExcelApplicationScope.Body>
+                      </ui:ExcelApplicationScope>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="454.6666666666667,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Error" Message="[&quot;error with &quot; + currentText]" />
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEach.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:ForEach>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <Assign sap:VirtualizedContainerService.HintSize="546.6666666666666,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_9">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd:DataTable">[out_FilteredPBC]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd:DataTable">[dt_CsvData]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="546.6666666666666,301.3333333333333" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,198.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_CsvData]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="382,138.66666666666666" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" WorkbookPath="C:\Users\pablo.balmaseda\Documents\AgenticAuditor\Outputs\fulldataset_5count.xlsx" />
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>
