@@ -1,0 +1,57 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "CombinedDataTable&Sequence_1",
+        "requiredColumns&Sequence_1",
+        "TempDataTable&Sequence_1",
+        "FilteredDataTable&Sequence_1",
+        "JsonOutput&Sequence_1",
+        "FilterOuputTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "GetFileVersion.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "pbcfile_out&Sequence_1",
+        "outputRecords&Sequence_1",
+        "newFileVersion&Sequence_1",
+        "FileId&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "VersionNumber",
+        "FileName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "GetEntityId.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ouputRecords&Sequence_1",
+        "sequencecounters&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "EntityName",
+        "CounterValue"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

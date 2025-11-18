@@ -1,0 +1,72 @@
+{
+  "name": "InjestPBCRequestFile",
+  "projectId": "0be9077d-2fe3-43a4-a15b-fd8a9cfcae92",
+  "description": "This workflow injest Excel file and extracts the PBC request and other related information. ",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.DataService.Activities": "[25.9.3]",
+    "UiPath.Excel.Activities": "3.2.1",
+    "UiPath.IntegrationService.Activities": "[1.20.0]",
+    "UiPath.Mail.Activities": "[1.24.16]",
+    "UiPath.System.Activities": "25.10.0",
+    "UiPath.Testing.Activities": "[24.10.4]",
+    "UiPath.UIAutomation.Activities": "[24.10.13]",
+    "UiPath.WebAPI.Activities": "2.3.0"
+  },
+  "webServices": [],
+  "entitiesStores": [
+    {
+      "serviceDocument": ".entities/EntitiesStore.json",
+      "tenantName": "DefaultTenant",
+      "namespace": "InjestPBCRequestFile",
+      "uniqueReference": "j0ScE1ZNmG/lAGZAAthfoV05VLnzkK1NvgUfy+/4TWY="
+    }
+  ],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.10.16.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "a073f05a-14b6-4925-a33e-5b084350385e",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
