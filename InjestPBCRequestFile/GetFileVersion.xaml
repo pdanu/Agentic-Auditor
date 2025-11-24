@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="GetFileVersion" this:GetFileVersion.FileName="file1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:i="clr-namespace:InjestPBCRequestFile;assembly=DataService.InjestPBCRequestFile" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:udam="clr-namespace:UiPath.DataService.Activities.Models;assembly=UiPath.DataService.Activities.Core" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CB9B652B10B_PBCFile.Bundle;assembly=CB9B652B10B_PBCFile.8BE6k44REI1F6PMA2O6nEW" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="GetFileVersion" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:i="clr-namespace:InjestPBCRequestFile;assembly=DataService.InjestPBCRequestFile" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:udam="clr-namespace:UiPath.DataService.Activities.Models;assembly=UiPath.DataService.Activities.Core" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CB9B652B10B_PBCFile.Bundle;assembly=CB9B652B10B_PBCFile.8BE6k44REI1F6PMA2O6nEW" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="FileName" Type="InArgument(x:String)" />
     <x:Property Name="VersionNumber" Type="OutArgument(x:Int32)" />
@@ -49,6 +49,86 @@
       <x:String>System.Linq.Expressions</x:String>
       <x:String>UiPath.IntegrationService.Activities.SWEntities.CB9B652B10B_PBCFile.Bundle</x:String>
       <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>Microsoft</x:String>
+      <x:String>Microsoft.Win32.SafeHandles</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>System.Configuration.Assemblies</x:String>
+      <x:String>System.CodeDom.Compiler</x:String>
+      <x:String>System.Buffers</x:String>
+      <x:String>System.Buffers.Text</x:String>
+      <x:String>System.Buffers.Binary</x:String>
+      <x:String>System.Threading</x:String>
+      <x:String>System.Threading.Tasks</x:String>
+      <x:String>System.Threading.Tasks.Sources</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Text.Unicode</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Security.Principal</x:String>
+      <x:String>System.Security.Permissions</x:String>
+      <x:String>System.Security.Cryptography</x:String>
+      <x:String>System.Runtime</x:String>
+      <x:String>System.Runtime.Remoting</x:String>
+      <x:String>System.Runtime.ExceptionServices</x:String>
+      <x:String>System.Runtime.ConstrainedExecution</x:String>
+      <x:String>System.Runtime.Versioning</x:String>
+      <x:String>System.Runtime.Loader</x:String>
+      <x:String>System.Runtime.Intrinsics</x:String>
+      <x:String>System.Runtime.Intrinsics.Wasm</x:String>
+      <x:String>System.Runtime.Intrinsics.Arm</x:String>
+      <x:String>System.Runtime.Intrinsics.X86</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.InteropServices.ObjectiveC</x:String>
+      <x:String>System.Runtime.InteropServices.Marshalling</x:String>
+      <x:String>System.Runtime.InteropServices.ComTypes</x:String>
+      <x:String>System.Runtime.CompilerServices</x:String>
+      <x:String>System.Resources</x:String>
+      <x:String>System.Reflection.Metadata</x:String>
+      <x:String>System.Reflection.Emit</x:String>
+      <x:String>System.IO.Enumeration</x:String>
+      <x:String>System.Diagnostics.SymbolStore</x:String>
+      <x:String>System.Diagnostics.Contracts</x:String>
+      <x:String>System.Diagnostics.CodeAnalysis</x:String>
+      <x:String>System.Diagnostics.Tracing</x:String>
+      <x:String>System.Collections.Concurrent</x:String>
+      <x:String>Internal</x:String>
+      <x:String>System.CodeDom</x:String>
+      <x:String>Microsoft.CSharp</x:String>
+      <x:String>System.Linq.Expressions.Interpreter</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>UiPath.Workflow.Runtime</x:String>
+      <x:String>System.Activities.Tracking</x:String>
+      <x:String>System.Activities.Statements.Tracking</x:String>
+      <x:String>System.Activities.Runtime</x:String>
+      <x:String>System.Activities.Runtime.DurableInstancing</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Activities.ParallelTracking</x:String>
+      <x:String>System.Activities.Hosting</x:String>
+      <x:String>System.Activities.Persistence</x:String>
+      <x:String>System.Activities.DurableInstancing</x:String>
+      <x:String>System.ComponentModel.Design.Serialization</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Security.Authentication.ExtendedProtection</x:String>
+      <x:String>System.Timers</x:String>
+      <x:String>System.ComponentModel.Design</x:String>
+      <x:String>System.Xml.Schema</x:String>
+      <x:String>System.Xml.Xsl</x:String>
+      <x:String>System.Xml.Xsl.Runtime</x:String>
+      <x:String>System.Xml.XPath</x:String>
+      <x:String>System.Xml.Resolvers</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>Microsoft.CodeAnalysis</x:String>
+      <x:String>Microsoft.CodeAnalysis.FlowAnalysis</x:String>
+      <x:String>Microsoft.CodeAnalysis.Text</x:String>
+      <x:String>Microsoft.CodeAnalysis.Diagnostics</x:String>
+      <x:String>Microsoft.CodeAnalysis.Diagnostics.Telemetry</x:String>
+      <x:String>Microsoft.CodeAnalysis.Operations</x:String>
+      <x:String>Microsoft.CodeAnalysis.Emit</x:String>
+      <x:String>Microsoft.CodeAnalysis.VisualBasic</x:String>
+      <x:String>Microsoft.CodeAnalysis.VisualBasic.Syntax</x:String>
+      <x:String>Microsoft.VisualBasic.FileIO</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -119,9 +199,69 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>C9CE9CBEE86_PBCFile.c7EuxkR50H1ZoHW41Jbwng1</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Validation</AssemblyReference>
+      <AssemblyReference>System.IO.Pipes</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography</AssemblyReference>
+      <AssemblyReference>System.Security.Principal.Windows</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.Process</AssemblyReference>
+      <AssemblyReference>System.IO.MemoryMappedFiles</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Registry</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>System.Threading.AccessControl</AssemblyReference>
+      <AssemblyReference>System.Threading</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>System.Threading.Tasks.Parallel</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Security.Claims</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.Pkcs</AssemblyReference>
+      <AssemblyReference>System.Security.Cryptography.ProtectedData</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.CompilerServices.VisualC</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Resources.Writer</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>Microsoft.PowerShell.Commands.Diagnostics</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.FileVersionInfo</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.DiagnosticSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TraceSource</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.EventLog</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.PerformanceCounter</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.TextWriterTraceListener</AssemblyReference>
+      <AssemblyReference>System.Diagnostics.StackTrace</AssemblyReference>
+      <AssemblyReference>System.Collections.Concurrent</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Net.Security</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Private.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xml.XPath.XDocument</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.Workspaces</AssemblyReference>
+      <AssemblyReference>Microsoft.CodeAnalysis.Features</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetFileVersion" sap:VirtualizedContainerService.HintSize="892.0000000000001,2069.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetFileVersion" sap:VirtualizedContainerService.HintSize="826.4000000000001,2284" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:IList(i:PBCFile)" Name="outputRecords" />
       <Variable x:TypeArguments="x:Int32" Name="FileId" />
@@ -156,38 +296,15 @@
         </scg:List>
       </uda:QueryEntityRecords.FilterValues>
     </uda:QueryEntityRecords>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="568,56.8" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,288" sap2010:WorkflowViewState.IdRef="Sequence_6">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACo1UXW/aMBT9K5GfNimjBXVsQ+KhodBlKyUC2j5M1WScW+Jh7MwfdBniv+86MRRtVJp4CDn3w/ece5wtGXEQuRkoaSmXoElvS2ZANSvoQkATJL1vjzH5TM2d5E8c8nlVAoJWO4hJKktnD3lbckvXQHqE5yQmV9yUglYBypLBiAvwOBimeWm5kojPC4hCLEqvMOz7I26s5nLZpPMlZm5JpgwPVZnma6orsovJFH46riHfj1RPc6MY3adSW2Cb1IzBFirPqMaBrOfq83fIbeLsSRZfuP1+NPZ/0XkhcMf9ya1UWljqepgZ6A1n0Lpklm+QCZjW7GEobfN3kHxKuu87Sfs82Z/aSpzM8RFe4+hUzsdk2F1dXEyHaXvUzcaXnUlXDh/i6B60wUP77da5/2GxE9Zp6EtwVlMRR5lbCM6+QjVXK5B96YQgjZ5gLOk9UWFQzymYUkkDr+nbqFcrjILV0YM7zBhttW9wFNo94uKO/TRQ6xIboulenGUslQwO+8LVbEkghcfWtPBU9K4EZpVGHgg7jn2Kd+GRU0tNozqmBt2rsKBrQMdzhoFJCc2GEJ0CGg824K3lWQr+G/J9ZVj+Ndio3lsVTYEpnUdJFaV59OYWnt/6mSgrADVSK1feU4Fy4uy7PZ5o9YxDpRbWAQ9uRgbefyTNCboyo2xFl3DMuPMX5TDOFbKMRnTRkDlEjyvbH+rKyeIHhl5zchP9Fz6lDn4RrC2bK+UVGc4Rqq9aj5yF2rMtz3cI31C5dEgFQyB9JTWJBrrC+z0oMOblCWabwy+bCMVW9Wdn9wc/UE/QoQQAAA==" ConnectionId="341db1fa-9aa1-4d22-b808-ffb9b652b10b" DisplayName="Get Entity Record By Id (New)" sap:VirtualizedContainerService.HintSize="382.4,228" sap2010:WorkflowViewState.IdRef="ConnectorActivity_2" UiPathActivityTypeId="e9f586f2-4a0e-30a7-a9cd-a393acd09abd">
-            <isactr:ConnectorActivity.FieldObjects>
-              <isactr:FieldObject Name="id" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <InArgument x:TypeArguments="x:String">[OutputRecords.FirstOrDefault().Id.ToString]</InArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-              <isactr:FieldObject Name="Jit_PBCFile" Type="FieldArgument">
-                <isactr:FieldObject.Value>
-                  <OutArgument x:TypeArguments="uiascb:PBCFile">[pbcfile_out]</OutArgument>
-                </isactr:FieldObject.Value>
-              </isactr:FieldObject>
-            </isactr:ConnectorActivity.FieldObjects>
-          </isactr:ConnectorActivity>
-        </Sequence>
-      </ui:CommentOut.Body>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:CommentOut>
-    <If sap2010:Annotation.AnnotationText="Add request file record for new file in PBCFile entity. Increment file version of the same file is uploaded again and save the Request file record in PBCFile entity. " Condition="[outputRecords.FirstOrDefault() is Nothing]" DisplayName="Ingest PBC request file and manage versions" sap:VirtualizedContainerService.HintSize="568,1816.8" sap2010:WorkflowViewState.IdRef="If_1">
+    <Assign sap:VirtualizedContainerService.HintSize="568,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[VersionNumber]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+      </Assign.Value>
+    </Assign>
+    <If sap2010:Annotation.AnnotationText="Add request file record for new file in PBCFile entity. Increment file version of the same file is uploaded again and save the Request file record in PBCFile entity. " Condition="[outputRecords.FirstOrDefault() is Nothing]" DisplayName="Ingest PBC request file and manage versions" sap:VirtualizedContainerService.HintSize="568,1974.4" sap2010:WorkflowViewState.IdRef="If_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -202,7 +319,7 @@
           </sap:WorkflowViewStateService.ViewState>
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GetEntityId - Invoke Workflow File (GetEntityId.xaml)" sap:VirtualizedContainerService.HintSize="382.4,176" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="GetEntityId.xaml">
             <ui:InvokeWorkflowFile.Arguments>
-              <InArgument x:TypeArguments="x:String" x:Key="EntityName">PBCFile</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="EntityName">[FileName]</InArgument>
               <OutArgument x:TypeArguments="x:Int32" x:Key="CounterValue">[FileId]</OutArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
@@ -234,13 +351,13 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="534.4,1074.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="534.4,1232" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACo1UXW/aMBT9K5GfNimjBXVsQ+KhodBlKyUC2j5M1WScW+Jh7MwfdBniv+86MRRtVJp4CDn3w/ece5wtGXEQuRkoaSmXoElvS2ZANSvoQkATJL1vjzH5TM2d5E8c8nlVAoJWO4hJKktnD3lbckvXQHqE5yQmV9yUglYBypLBiAvwOBimeWm5kojPC4hCLEqvMOz7I26s5nLZpPMlZm5JpgwPVZnma6orsovJFH46riHfj1RPc6MY3adSW2Cb1IzBFirPqMaBrOfq83fIbeLsSRZfuP1+NPZ/0XkhcMf9ya1UWljqepgZ6A1n0Lpklm+QCZjW7GEobfN3kHxKuu87Sfs82Z/aSpzM8RFe4+hUzsdk2F1dXEyHaXvUzcaXnUlXDh/i6B60wUP77da5/2GxE9Zp6EtwVlMRR5lbCM6+QjVXK5B96YQgjZ5gLOk9UWFQzymYUkkDr+nbqFcrjILV0YM7zBhttW9wFNo94uKO/TRQ6xIboulenGUslQwO+8LVbEkghcfWtPBU9K4EZpVGHgg7jn2Kd+GRU0tNozqmBt2rsKBrQMdzhoFJCc2GEJ0CGg824K3lWQr+G/J9ZVj+Ndio3lsVTYEpnUdJFaV59OYWnt/6mSgrADVSK1feU4Fy4uy7PZ5o9YxDpRbWAQ9uRgbefyTNCboyo2xFl3DMuPMX5TDOFbKMRnTRkDlEjyvbH+rKyeIHhl5zchP9Fz6lDn4RrC2bK+UVGc4Rqq9aj5yF2rMtz3cI31C5dEgFQyB9JTWJBrrC+z0oMOblCWabwy+bCMVW9Wdn9wc/UE/QoQQAAA==" ConnectionId="341db1fa-9aa1-4d22-b808-ffb9b652b10b" DisplayName="Get Entity Record By Id (New)" sap:VirtualizedContainerService.HintSize="500.8,236.8" sap2010:WorkflowViewState.IdRef="ConnectorActivity_3" UiPathActivityTypeId="e9f586f2-4a0e-30a7-a9cd-a393acd09abd">
+          <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACo1UXW/aMBT9K5GfNimjperQhsRDw0eXrbQRpe3DVE3GuSUexs78QZuh/PddJ4aijUoTDyHnfviec4+zJRMOIjdDJS3lEjTpb8ktUM0KuhDQBkn/+2NMvlBzJ/kTh3xelYCg1Q5iksrS2X3ellzTNZA+4TmJyYibUtAqQFkynHABHgfDNC8tVxLxeQFRiEXpCMO+P+LGai6XbTpfYuaWZMrwUJVpvqa6InVMZvDLcQ35bqRmmivF6C6V2gLbpGYKtlB5RjUOZD1Xn18jtxtnj7L4yu2Pg7H/i84rgTvuT+6k0sJSN8Pcgt5wBp0LZvkGmYDp3D6MpW3/DpPPSe/jWdI9TXandhInc3yE1zg6lvMpGfdW5+ezcdqd9LLpxdlNT44f4ugetMFDB93Oqf9hsRPWaRhIcFZTEUeZWwjOvkE1VyuQA+mEIK2eYCzpP1FhUM8ZmFJJA2/p26rXKIyCNdG9O8wUbbVrcBCqH3Fxh34aqnWJDdF0r84ylkoG+33harYkkMJjG1p4KnpXArNKIw+EHcc+xYfwyKmlplUdU4PuVVjQJaDjOcPATQnthhCdARoPNuCt5VkK/hvyXWVY/iXYqNlbFc2AKZ1HSRWlefTuGp7f+5koKwA1UitX3lOBcuLs9Q5PtHrGoVIL64AHNyMD7z+S5gRdmVG2oks4ZHz2F+UwzghZRhO6aMnso4eV591O1xNd/MTQW05uo//Cx9TBL4K1ZXulvCLjOULNVeuTk1B7suV5jfAVlUuHVDAE0ldSk2igK7zfwwJjXp5gtjm82EQotmo+O/Ufdulfs6EEAAA=" ConnectionId="341db1fa-9aa1-4d22-b808-ffb9b652b10b" DisplayName="Get Entity Record By Id (New)" sap:VirtualizedContainerService.HintSize="500.8,236.8" sap2010:WorkflowViewState.IdRef="ConnectorActivity_3" UiPathActivityTypeId="e9f586f2-4a0e-30a7-a9cd-a393acd09abd">
             <isactr:ConnectorActivity.FieldObjects>
               <isactr:FieldObject Name="id" Type="FieldArgument">
                 <isactr:FieldObject.Value>
@@ -254,9 +371,9 @@
               </isactr:FieldObject>
             </isactr:ConnectorActivity.FieldObjects>
           </isactr:ConnectorActivity>
-          <If Condition="[outputRecords.FirstOrDefault().FileName.ToString.Equals(FileName)]" DisplayName="If file record already exist then update file version number" sap:VirtualizedContainerService.HintSize="500.8,777.6" sap2010:WorkflowViewState.IdRef="If_2">
+          <If Condition="[outputRecords.FirstOrDefault().FileName.ToString.Equals(FileName)]" DisplayName="If file record already exist then update file version number" sap:VirtualizedContainerService.HintSize="500.8,935.2" sap2010:WorkflowViewState.IdRef="If_2">
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="467.2,526.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="467.2,640" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -270,7 +387,7 @@
                     <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(outputRecords.FirstOrDefault().FileVersion) + 1]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <uda:UpdateEntityRecord x:TypeArguments="i:PBCFile" InputEntity="{x:Null}" IsInRecordView="{x:Null}" OutputEntity="{x:Null}" VisibleDynamicPropertiesInfo="{x:Null}" ContinueOnError="False" DisplayName="Update Entity Record" EntityId="a35abe1a-4abf-f011-8195-6045bdda2ab2" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="433.6,352.8" sap2010:WorkflowViewState.IdRef="UpdateEntityRecord`1_1" InputEntityInFieldView="[new InjestPBCRequestFile.PBCFile() With {  .FileVersion = newFileVersion, .Id = New Guid(pbcfile_out.Id) }]" RecordId="[New Guid(pbcfile_out.Id)]" TimeoutInMs="30000">
+                <uda:UpdateEntityRecord x:TypeArguments="i:PBCFile" InputEntity="{x:Null}" IsInRecordView="{x:Null}" OutputEntity="{x:Null}" VisibleDynamicPropertiesInfo="{x:Null}" ContinueOnError="False" DisplayName="Update Entity Record" EntityId="a35abe1a-4abf-f011-8195-6045bdda2ab2" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="433.6,361.6" sap2010:WorkflowViewState.IdRef="UpdateEntityRecord`1_1" InputEntityInFieldView="[new InjestPBCRequestFile.PBCFile() With {  .FileVersion = newFileVersion, .Id = New Guid(pbcfile_out.Id) }]" RecordId="[New Guid(pbcfile_out.Id)]" TimeoutInMs="30000">
                   <uda:UpdateEntityRecord.State>
                     <udam:RecordState RequiredFieldCount="2">
                       <udam:RecordState.SelectedFields>
@@ -295,13 +412,25 @@
                     </udam:RecordState>
                   </uda:UpdateEntityRecord.State>
                 </uda:UpdateEntityRecord>
+                <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_3">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Int32">[VersionNumber]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Int32">[newFileVersion]</InArgument>
+                  </Assign.Value>
+                </Assign>
               </Sequence>
             </If.Then>
             <If.Else>
-              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="467.2,89.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence sap2010:Annotation.AnnotationText="create &quot;Archive&quot; folder if does not exist in a specfied path and move file from a gien folder to &quot;archive&quot; folder" DisplayName="Else" sap:VirtualizedContainerService.HintSize="467.2,133.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:Boolean" Name="archiveFolderExists" />
+                </Sequence.Variables>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Sequence>

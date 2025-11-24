@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="GetEntityId" this:GetEntityId.EntityName="PBCFile" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:i="clr-namespace:InjestPBCRequestFile;assembly=DataService.InjestPBCRequestFile" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:udam="clr-namespace:UiPath.DataService.Activities.Models;assembly=UiPath.DataService.Activities.Core" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CB9B652B10B_SequenceCounters.Bundle;assembly=CB9B652B10B_Sequence.dSa4p2Z98RL11Bg1i34zODw1" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="GetEntityId" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:i="clr-namespace:InjestPBCRequestFile;assembly=DataService.InjestPBCRequestFile" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:udam="clr-namespace:UiPath.DataService.Activities.Models;assembly=UiPath.DataService.Activities.Core" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CB9B652B10B_SequenceCounters.Bundle;assembly=CB9B652B10B_Sequence.dSa4p2Z98RL11Bg1i34zODw1" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="EntityName" Type="InArgument(x:String)" />
     <x:Property Name="CounterValue" Type="OutArgument(x:Int32)" />
@@ -121,7 +121,7 @@
       <AssemblyReference>CB9B652B10B_PBCFile.8BE6k44REI1F6PMA2O6nEW</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="GetEntityId" sap:VirtualizedContainerService.HintSize="892.0000000000001,1083.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="" DisplayName="GetEntityId" sap:VirtualizedContainerService.HintSize="826.4000000000001,992" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:IList(i:SequenceCounters)" Name="ouputRecords" />
       <Variable x:TypeArguments="uiascb:SequenceCounters" Name="sequencecounters">
@@ -178,7 +178,7 @@
         <InArgument x:TypeArguments="x:Int32">[CounterValue + 1]</InArgument>
       </Assign.Value>
     </Assign>
-    <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACpVUXU/bMBT9K5GfNikrhLExKvGwpMCyAa3awqRNaHKTS+PVsTN/wELU/77rOC1VKdqmPqS6Xz73nGM35IwBz3UihaFMgCL9hkyAqqygMw4+Sfrfb0Pyieprwe4Y5NO6AgwaZSEkqaisWdc15IqWQPqE5SQkA6YrTusuNIFfFkQGibTCgNKuAHSmWGWYFFgwLSDYLgrSAda5E7FAG8XE3PexObY0ZCQ169pHipVU1WQZkjFOYQryFcgW34XM6KqUmgLHpPoSTCHzEVUIEY/z9UvcdmjNzr0+M/Nj1yL/t+nTStfMYemlWDdXLbwJqHuWQe9jZtg97ga6N/l6Koz/m8TH8ft3B3G0Hz/D0YutyDn0tuNhsKurl0/oYXXw7fjD+CKK4nnE3h4+DgcPURjcYBMiOYl6++6H/ZYbq+BEgDWK8jAY2Rln2Reop3IB4kRYzomnHbQh/TvKNdI+Bl1JoeElGTzJrRDIa5td20pfoh9XAzZSy1vUd9OIiSwrHIhufbKkNhQ3XMuKCjakWwqPbdfCU9H0AjIjFe6BYctwTvGm++TUUO2lwNJOjLpT7RzwqrAME8MKvGwYHQP6E+7BOdBtydkj5KvOzhrnYIJWzDoYQyZVHsR1kObBqyt4eO0w0awA5EgubHVDOdLpsA9nPxGoH4FeTPMXTOZdmEhuS+Fs+7wIrT1pb9GZVCU12x2k2V/+i50Tq40sNxTxuGMlH5C01EDpcGO8u5TIcIsHkSOCEc0WdA6bihxsSdIdPUAVgjM682Svs5ud0VHb6Sn6K/BNJnfmd+mJj58xlX8rnIanUwy1b0if7G0P2WtY7ji8oGJucUusAeFGUB0roAvkPikw55Tt7skUfpuYy2zRPrXLP+TK+D+VBQAA" ConnectionId="341db1fa-9aa1-4d22-b808-ffb9b652b10b" DisplayName="Get Entity Record By Id (New)" sap:VirtualizedContainerService.HintSize="433.6,205.6" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="e9f586f2-4a0e-30a7-a9cd-a393acd09abd">
+    <isactr:ConnectorActivity Configuration="H4sIAAAAAAAACpVUXW/TMBT9K5GfQArZUgZilfpA0m0EtrVquyGBJuQmd42pYwd/dGRR/zvXSdpVXSdAfUh1v3zuOceuyTkDnulYCkOZAEX6NZkCVWlO5xzaJOl/v/PJJ6pvBLtnkM2qEjBolAWfJKK0ZltXk2taAOkTlhGfDJkuOa260BR+WRApxNIKA0q7AtCpYqVhUmDBLAdvv8hLhljnTsQCbRQTi7aPLbClJmOpWdc+VqygqiJrn0xwClOQbUA2+C5lSjel1OQ4JtFXYHKZjalCiHhcW7/GbUfWHNzrMzM/Di3yf5s+rXTDHJYgwbqFauBNQa1YCsHH1LAV7gY6mH49E6b9G0en0ft3vSg8jp7hCCIrMg7Bftz3DnUF2ZSelL1vpx8ml2EYLUL29uRxNHwIfe8WmxDJIAyO3Q/7LTdWwUCANYpy3xvbOWfpF6hmcgliICznpKUdtCH9e8o10j4BXUqh4SUZWpIbIZDXJru1lb5CP24G7KTWd6jvrhFjWZQ4EN36ZEltKG64lRUVrEm3FB7brIWnoukFpEYq3APDluGc/E33yaihupUCSzsxqk61C8CrwlJMjEpoZcPoBNCfsALnQLclZ4+QbTo7a1yA8RoxK28CqVSZF1VeknmvruHhtcNE0xyQI7m05S3lSKfDPpr/RKDtCPRikr1gstaFseS2EM62z4vQ2tPmFp1LVVCz30Hq4/W/2Dm22shiR5EWd6TkA5KWGCgcbox3lxIZbvAgckQwpumSLmBXkd6eJN3RQ1TBO6fzluxtdrfzJAxCJ0RD0V+B7zJ5MH9IT3z8jCnbt8JpeDbDUPOG9MnR/pCjmmWOw0sqFha3xBoQbgTVkQK6RO7jHHNO2e6ezOC3ibhMl81Tu/4DVo4gLJUFAAA=" ConnectionId="341db1fa-9aa1-4d22-b808-ffb9b652b10b" DisplayName="Get Entity Record By Id (New)" sap:VirtualizedContainerService.HintSize="433.6,236.8" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="e9f586f2-4a0e-30a7-a9cd-a393acd09abd">
       <isactr:ConnectorActivity.FieldObjects>
         <isactr:FieldObject Name="id" Type="FieldArgument">
           <isactr:FieldObject.Value>
@@ -192,7 +192,7 @@
         </isactr:FieldObject>
       </isactr:ConnectorActivity.FieldObjects>
     </isactr:ConnectorActivity>
-    <uda:UpdateEntityRecord x:TypeArguments="i:SequenceCounters" InputEntity="{x:Null}" IsInRecordView="{x:Null}" OutputEntity="{x:Null}" VisibleDynamicPropertiesInfo="{x:Null}" ContinueOnError="False" DisplayName="Update Entity Record" EntityId="072ce09b-49bf-f011-8195-6045bdda2ab2" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="UpdateEntityRecord`1_1" InputEntityInFieldView="[new InjestPBCRequestFile.SequenceCounters() With {  .CurrentValue = CounterValue, .Id = New Guid(sequencecounters.Id) }]" RecordId="[New Guid(sequencecounters.Id)]" TimeoutInMs="30000">
+    <uda:UpdateEntityRecord x:TypeArguments="i:SequenceCounters" InputEntity="{x:Null}" IsInRecordView="{x:Null}" OutputEntity="{x:Null}" VisibleDynamicPropertiesInfo="{x:Null}" ContinueOnError="False" DisplayName="Update Entity Record" EntityId="072ce09b-49bf-f011-8195-6045bdda2ab2" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="433.6,300.8" sap2010:WorkflowViewState.IdRef="UpdateEntityRecord`1_1" InputEntityInFieldView="[new InjestPBCRequestFile.SequenceCounters() With {  .CurrentValue = CounterValue, .Id = New Guid(sequencecounters.Id) }]" RecordId="[New Guid(sequencecounters.Id)]" TimeoutInMs="30000">
       <uda:UpdateEntityRecord.State>
         <udam:RecordState RequiredFieldCount="1">
           <udam:RecordState.SelectedFields>
@@ -212,6 +212,5 @@
         </udam:RecordState>
       </uda:UpdateEntityRecord.State>
     </uda:UpdateEntityRecord>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[CounterValue.ToString]" />
   </Sequence>
 </Activity>

@@ -8,7 +8,7 @@
     "UiPath.Excel.Activities": "3.2.1",
     "UiPath.IntegrationService.Activities": "[1.20.0]",
     "UiPath.Mail.Activities": "[1.24.16]",
-    "UiPath.System.Activities": "25.10.0",
+    "UiPath.System.Activities": "25.10.3",
     "UiPath.Testing.Activities": "[24.10.4]",
     "UiPath.UIAutomation.Activities": "[24.10.13]",
     "UiPath.WebAPI.Activities": "2.3.0"
@@ -19,7 +19,7 @@
       "serviceDocument": ".entities/EntitiesStore.json",
       "tenantName": "DefaultTenant",
       "namespace": "InjestPBCRequestFile",
-      "uniqueReference": "j0ScE1ZNmG/lAGZAAthfoV05VLnzkK1NvgUfy+/4TWY="
+      "uniqueReference": "h46ywK0XcjCPNeeNk9vzYl4LBmzJKo6kwkQBkeZ2EFI="
     }
   ],
   "schemaVersion": "4.0",

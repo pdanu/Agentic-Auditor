@@ -1,0 +1,21 @@
+{
+  "DisplayName": "Main",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "FolderPath",
+      "DisplayName": "FolderPath",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "C:\\Users\\PritamkumarDimri\\OneDrive - Groundswell\\Documents\\AgenticAuditor\\WatchFolder",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}
