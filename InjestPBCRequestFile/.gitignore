@@ -2,6 +2,10 @@
 .local/*
 /.local
 /.local/*
+.debug
+.debug/*
+/.debug
+/.debug/*
 .settings
 .settings/*
 /.settings
