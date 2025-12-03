@@ -1,0 +1,17 @@
+.local
+.local/*
+/.local
+/.local/*
+.settings
+.settings/*
+/.settings
+/.settings/*
+.objects
+.objects/*
+/.objects
+/.objects/*
+.tmh
+.tmh/*
+/.tmh
+/.tmh/*
+~*
