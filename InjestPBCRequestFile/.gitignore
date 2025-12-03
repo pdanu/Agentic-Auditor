@@ -1,21 +1,22 @@
-.local
-.local/*
-/.local
-/.local/*
-.debug
-.debug/*
-/.debug
-/.debug/*
-.settings
-.settings/*
-/.settings
-/.settings/*
-.objects
-.objects/*
-/.objects
-/.objects/*
-.tmh
-.tmh/*
-/.tmh
-/.tmh/*
-~*
+# Ignore temporary and cache files
+*.tmp
+*.log
+*.suo
+*.user
+.local/
+references.db
+
+# Ignore build artifacts and auto-generated files
+Binaries/
+JitCustomTypes.json
+project.json.backup
+
+# Ignore user-specific or IDE-specific settings
+.vscode/
+.idea/
+
+# Ignore other specific folders and files
+Diagnosis/
+Temp/
+upgrade_log.txt
+*.zip
